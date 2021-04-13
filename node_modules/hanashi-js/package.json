@@ -1,0 +1,47 @@
+{
+  "_from": "hanashi-js",
+  "_id": "hanashi-js@0.9.3",
+  "_inBundle": false,
+  "_integrity": "sha512-V0K5vHVyQSkrJRB5Mekqej4eKiP7CnPFfJpAm+g2AZbK0ozNHdVFkcZgbHJQAhOalO49lqSnY2Rx1oD/7+ZkeQ==",
+  "_location": "/hanashi-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "hanashi-js",
+    "name": "hanashi-js",
+    "escapedName": "hanashi-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hanashi-js/-/hanashi-js-0.9.3.tgz",
+  "_shasum": "bf55dcbcdf7f95b82b5914e4c199b769f6666f12",
+  "_spec": "hanashi-js",
+  "_where": "D:\\_DRIVE\\web\\bootcamp-homework",
+  "author": {
+    "name": "Dick Jones"
+  },
+  "bugs": {
+    "url": "https://github.com/dick-jo/storyline-js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Tiny engine for neat modern nav panels",
+  "homepage": "https://github.com/dick-jo/storyline-js#readme",
+  "license": "ISC",
+  "main": "storyline.js",
+  "name": "hanashi-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dick-jo/storyline-js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.9.3"
+}

@@ -1,0 +1,51 @@
+{
+  "_from": "marlin-css",
+  "_id": "marlin-css@0.5.8",
+  "_inBundle": false,
+  "_integrity": "sha512-5Uv4MpYg9gpcjxSriFnEWwF2cxEyRFmsJBobX9RChWvbgg8KjYGyfwvuo79aIHUOXvvhmtACC9Mapng6OtrEGA==",
+  "_location": "/marlin-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "marlin-css",
+    "name": "marlin-css",
+    "escapedName": "marlin-css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/marlin-css/-/marlin-css-0.5.8.tgz",
+  "_shasum": "2afd42f86b9c5fe1598b171ddf07941e1edb36a1",
+  "_spec": "marlin-css",
+  "_where": "D:\\_DRIVE\\web\\bootcamp-homework",
+  "author": {
+    "name": "Dick Jones"
+  },
+  "bugs": {
+    "url": "https://github.com/dick-jo/marlin-css/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "An extremely opinionated css framework powered by streamlined design systems.",
+  "homepage": "https://github.com/dick-jo/marlin-css#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "marlin-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dick-jo/marlin-css.git"
+  },
+  "scripts": {
+    "build": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.5.8"
+}
