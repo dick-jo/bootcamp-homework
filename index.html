@@ -6,10 +6,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="node_modules/marlin-css/marlin.css" rel="stylesheet" type="text/css">
+
+    <style>
+        /* TOOLS */
+        @import url("./node_modules/maki-js/maki.css");
+        /* FONTS */
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+        :root {
+            --font-display: 'IBM Plex Mono', monospace;
+            --font-body: 'Work sans', monospace;
+        }
+
+        /* COMMON */
+        h1 {
+            font-size: var(--fs-4);
+            line-height: var(--fs-4);
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .light {
+            font-weight: 400;
+        }
+
+        /* NAV */
+        nav {
+            height: 72px;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(var(--sc-3));
+            -webkit-backdrop-filter: blur(var(--sc-3));
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        [data-theme="dark"] nav {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        /* BTN-DARK */
+        #btnDark {
+            border: var(--border);
+            border-color: var(--text);
+            color: var(--text);
+            height: var(--sc-5);
+            padding: 0 var(--sc-4);
+            transition: var(--tm-1);
+        }
+
+        #btnDark:hover {
+            background-color: var(--text);
+            color: var(--dark-text);
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+
+        [data-theme="dark"] #btnDark:hover {
+            background-color: var(--text);
+            color: var(--dark-background)
+        }
+
+        .span-dark {
+            opacity: 24%;
+        }
+
+        [data-theme="dark"] .span-dark {
+            opacity: 100%
+        }
+
+        [data-theme="dark"] .span-light {
+            opacity: 24%;
+        }
+
+        /* MAIN */
+        main {
+            padding: 0 var(--sc-6);
+            height: 100%;
+        }
+
+        main>* {
+            margin: var(--sc-6) 0;
+        }
+
+        /* HEADER */
+        header {
+            height: 720px;
+            padding: var(--sc-6) 0;
+        }
+
+        header .title>* {
+            margin-bottom: var(--sc-3);
+        }
+
+
+        /*  */
+    </style>
+
 </head>
 
 <body>
-    hello <p>Test</p>
+    <nav class="fx ln-bottom">
+        <h5><span class="bold">Unit 9 |</span> <span class="light">IA & Navigation</span></h5>
+        <button id="btnDark" class="btn-tertiary cr-4">
+            <span class="span-light">light</span> /
+            <span class="span-dark">dark</span>
+        </button>
+    </nav>
+
+    <main>
+        <header class="tile grid-12 cr-1">
+            <div class="cols-1"></div>
+            <div id="heroTitle" class="title cols-5">
+                <h1>IA & Navigation Prototype.</h1>
+                <div class="stub fill-accent"></div>
+            </div>
+            <div class="cols-1"></div>
+            <div id="heroThumb" class="cols-4 ln">
+
+            </div>
+            <div class="cols-1"></div>
+        </header>
+    </main>
+
+    <!--  -->
+
+    <!--  -->
+    <script type="module">
+        import Maki from "maki-js"
+        import DracJr from "drac-jr"
+        import { ToggleDark } from "drac-jr"
+        Maki()
+        DracJr()
+        document.getElementById("btnDark").addEventListener("click", ToggleDark)
+    </script>
+    <!--  -->
 </body>
 
 </html>
