@@ -1,0 +1,51 @@
+{
+  "_from": "drac-jr@latest",
+  "_id": "drac-jr@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-C1MepMgy9Bx3TW6/Fzcq2NHexsYZyDi56SQXfyTYTUUWsGm/ipbYm6kpozFCTc28/6R/N/HZVdo35tVzsE6ZtQ==",
+  "_location": "/drac-jr",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "drac-jr@latest",
+    "name": "drac-jr",
+    "escapedName": "drac-jr",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/drac-jr/-/drac-jr-0.4.0.tgz",
+  "_shasum": "d6a06a2b213ea88691883f10b35390678e18cd57",
+  "_spec": "drac-jr@latest",
+  "_where": "D:\\_DRIVE\\web\\bootcamp-homework",
+  "author": {
+    "name": "Dick Jones"
+  },
+  "bugs": {
+    "url": "https://github.com/dick-jo/drac-jr/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Itty bitty dark mode handler",
+  "homepage": "https://github.com/dick-jo/drac-jr#readme",
+  "keywords": [
+    "dark",
+    "mode"
+  ],
+  "license": "ISC",
+  "main": "drac-jr.js",
+  "name": "drac-jr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dick-jo/drac-jr.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.4.0"
+}

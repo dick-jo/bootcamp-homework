@@ -1,0 +1,55 @@
+{
+  "_from": "maki-js@latest",
+  "_id": "maki-js@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-CvPouQpdn0SYLurCQHgdGrCT1T4q9kyR1hcrLMo8v7KCzR/T8p94C2zEMdL/UEnmyw98dZv9HqldQ2XJsdV2nA==",
+  "_location": "/maki-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "maki-js@latest",
+    "name": "maki-js",
+    "escapedName": "maki-js",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/maki-js/-/maki-js-1.0.8.tgz",
+  "_shasum": "fc8ea98530a1fe519e49fbd4226843a01ea81576",
+  "_spec": "maki-js@latest",
+  "_where": "D:\\_DRIVE\\web\\bootcamp-homework",
+  "author": {
+    "name": "Dick Jones"
+  },
+  "bugs": {
+    "url": "https://github.com/dick-jo/maki.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Stupidly simple on-scroll element reveal handler",
+  "homepage": "https://github.com/dick-jo/maki.js#readme",
+  "keywords": [
+    "scroll",
+    "js",
+    "css",
+    "reveal",
+    "animation",
+    "scroll-in"
+  ],
+  "license": "ISC",
+  "main": "maki.js",
+  "name": "maki-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dick-jo/maki.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.8"
+}
