@@ -8,15 +8,12 @@
     <title>Document</title>
 
     <link href="./node_modules/marlin-css/marlin.css" rel="stylesheet" type="text/css">
+    <link href="./node_modules/maki-js/maki.css" rel="stylesheet" type="text/css">
 
     <style>
-        /* TOOLS */
-        @import url("./node_modules/maki-js/maki.css");
         /* FONTS */
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 
         :root {
             --font-display: 'IBM Plex Mono', monospace;
@@ -87,7 +84,7 @@
         /* MAIN */
         main {
             padding: 0 var(--sc-6);
-            height: 100%;
+            height: 1920px;
         }
 
         main>* {
@@ -98,6 +95,10 @@
         header {
             height: 720px;
             padding: var(--sc-6) 0;
+        }
+
+        header>* {
+            padding: var(--sc-6);
         }
 
         header .title>* {
@@ -120,29 +121,32 @@
     </nav>
 
     <main>
-        <header class="tile grid-12 cr-1">
-            <div class="cols-1"></div>
-            <div id="heroTitle" class="title cols-5">
+        <header class="tile grid-12 cr-1" data-maki="scroll-in">
+            <div id="heroTitle" class="title cols-6">
                 <h1>IA & Navigation Prototype.</h1>
                 <div class="stub fill-accent"></div>
+                <p>This week, you’re an information architect who wants to understand how people navigate a government
+                    agency website so that you can develop a more user-centered user interface (UI) system.
+                </p>
             </div>
-            <div class="cols-1"></div>
-            <div id="heroThumb" class="cols-4 ln">
+
+            <div id="heroThumb" class="cols-6">
+                <div class="ln">
+                    <p>13.5 hrs</p>
+                </div>
 
             </div>
-            <div class="cols-1"></div>
+
         </header>
+
     </main>
 
     <!--  -->
-
-    <!--  -->
-    <script type="module">
-        import Maki from "maki-js"
-        import DracJr from "drac-jr"
-        import { ToggleDark } from "drac-jr"
-        Maki()
-        DracJr()
+    <script src="node_modules/maki-js/maki.js"></script>
+    <script src="node_modules/drac-jr/drac-jr.js"></script>
+    <script>
+        maki()
+        // DracJr()
         document.getElementById("btnDark").addEventListener("click", ToggleDark)
     </script>
     <!--  -->
