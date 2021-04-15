@@ -1,8 +1,8 @@
 {
   "_from": "drac-jr@latest",
-  "_id": "drac-jr@0.4.0",
+  "_id": "drac-jr@0.4.1",
   "_inBundle": false,
-  "_integrity": "sha512-C1MepMgy9Bx3TW6/Fzcq2NHexsYZyDi56SQXfyTYTUUWsGm/ipbYm6kpozFCTc28/6R/N/HZVdo35tVzsE6ZtQ==",
+  "_integrity": "sha512-///580pBhWx+iTeKiFWpSg2UJFuCJ8L1xkr+cbyMYqGDiNk+PPLmLj2xCN6gNCTd1uZqYj62mDXUURnwP4RUww==",
   "_location": "/drac-jr",
   "_phantomChildren": {},
   "_requested": {
@@ -19,8 +19,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/drac-jr/-/drac-jr-0.4.0.tgz",
-  "_shasum": "d6a06a2b213ea88691883f10b35390678e18cd57",
+  "_resolved": "https://registry.npmjs.org/drac-jr/-/drac-jr-0.4.1.tgz",
+  "_shasum": "34784ba0bb2fdc4e7106558ea3a4294982b62a63",
   "_spec": "drac-jr@latest",
   "_where": "D:\\_DRIVE\\web\\bootcamp-homework",
   "author": {
@@ -47,5 +47,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.4.0"
+  "version": "0.4.1"
 }

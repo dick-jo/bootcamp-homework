@@ -10,9 +10,10 @@
   "author": "Dick Jones",
   "license": "ISC",
   "dependencies": {
-    "drac-jr": "^0.4.0",
+    "drac-jr": "^0.4.1",
     "hanashi-js": "^0.9.3",
     "maki-js": "^1.0.8",
-    "marlin-css": "^0.5.8"
+    "marlin-css": "^0.5.8",
+    "vanilla-tilt": "^1.7.0"
   }
 }

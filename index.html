@@ -9,6 +9,7 @@
 
     <link href="./tools/marlin-css/marlin.css" rel="stylesheet" type="text/css">
     <link href="./tools/maki-js/maki.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 
     <style>
         /* FONTS */
@@ -18,12 +19,82 @@
         :root {
             --font-display: 'IBM Plex Mono', monospace;
             --font-body: 'Work sans', monospace;
+            --border: 1px solid var(--text);
+            /* RAILS */
+            --rail-a: var(--sc-5);
+            /* MAKI */
+            --maki-duration: 560ms;
+        }
+
+        /* COLS */
+        :root {
+            /* DEFAULT GRID */
+            --grid-1: 12;
+            --grid-2: 8;
+            --grid-3: 6;
+            --grid-4: 4;
+            --grid-5: 3;
+            --grid-6: 2;
+        }
+
+        .cols-8 {
+            grid-column: span var(--grid-2);
+        }
+
+        .cols-6 {
+            grid-column: span var(--grid-3);
+        }
+
+        .cols-4 {
+            grid-column: span var(--grid-4);
+        }
+
+        .cols-3 {
+            grid-column: span var(--grid-5);
+        }
+
+        .cols-1 {
+            grid-column: span var(--grid-6);
+        }
+
+        @media screen and (max-width: 864px) {
+            :root {
+                /* SMALL GRID */
+                --grid-1: 12;
+                --grid-2: 12;
+                --grid-3: 12;
+                --grid-4: 6;
+                --grid-5: 6;
+                --grid-6: 4;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            header .title {
+                flex-basis: 25%
+            }
+
+            header .container {
+                flex-basis: 75%;
+            }
         }
 
         /* COMMON */
         h1 {
             font-size: var(--fs-4);
             line-height: var(--fs-4);
+        }
+
+        h2 {
+            font-size: var(--fs-3);
+            line-height: var(--fs-3);
+        }
+
+        h5 {
+            font-size: calc(var(--fs-2) * 0.72);
+            font-weight: 640;
         }
 
         .bold {
@@ -34,6 +105,22 @@
             font-weight: 400;
         }
 
+        .large {
+            font-size: var(--fs-2);
+        }
+
+        .material-icons-outlined {
+            transform: translateY(calc(var(--sc-1) * 0.64));
+        }
+
+        .rail-a {
+            min-height: var(--rail-a);
+        }
+
+        .stub {
+            margin: var(--sc-3) 0;
+        }
+
         /* NAV */
         nav {
             height: 72px;
@@ -42,6 +129,7 @@
             backdrop-filter: blur(var(--sc-3));
             -webkit-backdrop-filter: blur(var(--sc-3));
             background-color: rgba(255, 255, 255, 0.5);
+            z-index: 72;
         }
 
         [data-theme="dark"] nav {
@@ -83,28 +171,84 @@
 
         /* MAIN */
         main {
-            padding: 0 var(--sc-6);
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1600px;
             height: 1920px;
         }
 
         main>* {
-            margin: var(--sc-6) 0;
+            margin: var(--sc-4) 0;
         }
 
         /* HEADER */
         header {
-            height: 720px;
-            padding: var(--sc-6) 0;
+            display: flex;
+            min-height: 720px;
+            height: 72vh;
+            max-height: 980px;
         }
 
         header>* {
             padding: var(--sc-6);
+            flex-basis: 50%;
         }
 
-        header .title>* {
-            margin-bottom: var(--sc-3);
+        /* HERO FIGURE */
+
+        #heroFigureContainer {
+            display: flex;
         }
 
+        header figure {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header figure .body {
+            background: url(heroIllustration_IA.svg);
+            background-color: var(--accent);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            flex-grow: 1;
+        }
+
+        header figure .label {
+            padding: var(--sc-2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: var(--rail-a);
+        }
+
+        /* BREAKUP: FOLD */
+        #breakupFold {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bouncingChevron {
+            font-size: var(--fs-4);
+            color: var(--accent);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(var(--sc-2))
+            }
+
+            50% {
+                transform: translateY(calc(var(--sc-2) * -1))
+            }
+
+            100% {
+                transform: translateY(var(--sc-2))
+            }
+        }
 
         /*  */
     </style>
@@ -112,7 +256,9 @@
 </head>
 
 <body>
-    <nav class="fx ln-bottom">
+
+    <!-- TOP NAV -->
+    <nav class="fx">
         <h5><span class="bold">Unit 9 |</span> <span class="light">IA & Navigation</span></h5>
         <button id="btnDark" class="btn-tertiary cr-4">
             <span class="span-light">light</span> /
@@ -120,30 +266,55 @@
         </button>
     </nav>
 
+    <!-- MAIN CONTENT -->
     <main>
-        <header class="tile grid-12 cr-1" data-maki="scroll-in">
-            <div id="heroTitle" class="title cols-6">
+
+        <!-- HERO HEADER -->
+        <header id="hero" class="tile cr-1" data-maki="scroll-in" data-tilt data-tilt-max="1.2" data-tilt-speed="300"
+            data-tilt-glare="true" data-tilt-max-glare="0.42">
+            <div id="heroTitle" class="title">
                 <h1>IA & Navigation Prototype.</h1>
                 <div class="stub fill-accent"></div>
-                <p>This week, you’re an information architect who wants to understand how people navigate a government
+                <p class="large">This week, you’re an information architect who wants to understand how people
+                    navigate
+                    a government
                     agency website so that you can develop a more user-centered user interface (UI) system.
                 </p>
             </div>
-
-            <div id="heroThumb" class="cols-6">
-                <div class="ln">
-                    <p>13.5 hrs</p>
-                </div>
-
+            <div id="heroFigureContainer" class="container">
+                <figure class="ln" data-maki="scroll-in">
+                    <div class="body"></div>
+                    <div class="label ln-top">
+                        <h5 data-maki="blur-in">
+                            <span class="material-icons-outlined">hourglass_empty</span>~11-19hrs /
+                            <span class="material-icons-outlined">people_alt</span> Independent + Pairs
+                        </h5>
+                    </div>
+                </figure>
             </div>
-
         </header>
+
+        <!-- BREAKUP: FOLD -->
+        <div id="breakupFold">
+            <span id="bouncingChevron" class="material-icons-outlined">
+                expand_more
+            </span>
+        </div>
+
+        <!-- OBJECTIVES -->
+
+        <section id="sectionObjectives" class="">
+            <h2>Objectives</h2>
+            <div class="stub fill-accent"></div>
+            <div class="body grid-12"></div>
+        </section>
 
     </main>
 
     <!--  -->
     <script src="./tools/maki-js/maki.js"></script>
     <script src="./tools/drac-jr/drac-jr.js"></script>
+    <script src="./tools/vanilla-tilt/dist/vanilla-tilt.js"></script>
     <script>
         maki()
         dracJr()
