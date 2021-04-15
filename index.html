@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <link href="./tools/marlin-css/marlin.css" rel="stylesheet" type="text/css">
-    <link href="./tools/maki-js/maki.css" rel="stylesheet" type="text/css">
+    <!-- <link href="./tools/maki-js/maki.css" rel="stylesheet" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 
     <style>
@@ -103,6 +103,10 @@
             font-weight: 640;
         }
 
+        h6 {
+            font-weight: 600;
+        }
+
         .bold {
             font-weight: 900;
         }
@@ -113,6 +117,11 @@
 
         .large {
             font-size: var(--fs-2);
+        }
+
+        .small {
+            font-size: var(--fs-1);
+            line-height: calc(var(--fs-2) * 1.12);
         }
 
         .material-icons-outlined {
@@ -153,12 +162,17 @@
             width: 100%;
             position: fixed;
             top: 0;
-            justify-content: space-between;
-            align-items: center;
             backdrop-filter: blur(var(--sc-3));
             -webkit-backdrop-filter: blur(var(--sc-3));
             background-color: rgba(255, 255, 255, 0.5);
             z-index: 72;
+            border-bottom: 1px solid #bdbdbd;
+        }
+
+        .nav-wrapper {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
         }
 
         [data-theme="dark"] nav {
@@ -199,13 +213,16 @@
         }
 
         /* MAIN */
-        main {
+        main,
+        .nav-wrapper {
             margin-left: auto;
             margin-right: auto;
             max-width: 1680px;
             padding: 0 var(--sc-4);
-            /* TEMP */
-            height: 5400px;
+        }
+
+        main {
+            padding-bottom: 420px;
         }
 
         main>* {
@@ -295,9 +312,44 @@
 
         /* SECTION: DELIVERABLES */
 
+        #sectionDeliverables .body>* {
+            margin-bottom: var(--sc-4);
+        }
+
+        #sectionDeliverables .bold {
+            font-weight: 640;
+        }
+
         .deliverable {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+        }
+
+        .deliverable .rail {
+            display: flex;
+            align-items: center;
+            height: var(--rail-a);
+            padding: 0 0 0 var(--sc-4);
+        }
+
+        .deliverable .label {
+            flex-grow: 1;
+        }
+
+        .deliverable .btn-mark {
+            display: flex;
+            align-items: center;
+            padding: 0 var(--sc-4);
+            height: 100%;
+            color: #bdbdbd;
+        }
+
+        .deliverable>* {
+            padding: var(--sc-4) var(--sc-4);
+        }
+
+        .deliverable .body {
+            font-weight: 500;
         }
 
         /*  */
@@ -308,12 +360,14 @@
 <body>
 
     <!-- TOP NAV -->
-    <nav class="fx">
-        <h5><span class="bold">Unit 9 |</span> <span class="light">IA & Navigation</span></h5>
-        <button id="btnDark" class="btn-tertiary cr-4">
-            <span class="span-light">light</span> /
-            <span class="span-dark">dark</span>
-        </button>
+    <nav>
+        <div class="nav-wrapper fx">
+            <h5><span class="bold">Unit 9 |</span> <span class="light">IA & Navigation</span></h5>
+            <button id="btnDark" class="btn-tertiary cr-4">
+                <span class="span-light">light</span> /
+                <span class="span-dark">dark</span>
+            </button>
+        </div>
     </nav>
 
     <!-- MAIN CONTENT -->
@@ -325,7 +379,8 @@
             <div id="heroTitle" class="title">
                 <h1>IA & Navigation Prototype.</h1>
                 <div class="stub fill-accent"></div>
-                <p class="large">This week, you’re an information architect who wants to understand how people
+                <p class="large">This week, you’re an Information Architect who wants to
+                    understand how people
                     navigate
                     a government
                     agency website so that you can develop a more user-centered user interface (UI) system.
@@ -365,9 +420,8 @@
                     You’ll be creating a new IA for your
                     government agency by analyzing the UI navigation, card sorting, redesigning the sitemap, and
                     creating a new UI navigation prototype.
-                    <br />
-                    Today’s homework is the continuation of the design
-                    challenge (03 - UI Design Challenge | Units 8-12).
+                    <br /><br />
+                    Today’s homework is the continuation of the government agency design challenge.
                     Much of the assignment you have already begun
                     working on during in-class activities.
                 </p>
@@ -399,7 +453,193 @@
             <h2>Deliverables</h2>
             <div class="stub fill-accent"></div>
             <div class="body">
-                <div class="deliverable ln"></div>
+
+                <!-- DELIVERABLE -->
+                <div class="deliverable ln" data-maki="scroll-in">
+                    <!-- RAIL -->
+                    <div class="rail cols-12 ln-bottom">
+                        <h5 class="label">1. ⟶ Heuristic Evaluation of Navigation</h5>
+                        <div class="btn-mark">
+                            <h6>+ MARK AS DONE</h6>
+                        </div>
+                    </div>
+                    <!-- BODY -->
+                    <div class="body cols-8">
+                        <p>‣ Pair up and <span class="bold">analyze the navigation</span> of your website with usability
+                            heuristics in mind.</p>
+                        <br />
+                        <p>‣ Take screenshots of your agency's navigation structures <i>(top nav, side nav, footer,
+                                breadcrumbs, tabs, etc.)</i> and begin <span class="bold">redlining/annotating</span>
+                            these
+                            screenshots by <span class="bold">pointing out problems</span>, as well as highlighting
+                            anything that you believe is
+                            <span class="bold">already working</span> quite well.
+                        </p>
+                        <br />
+                        <p>‣ Finally, <span class="bold">suggest solutions to these problems</span> and briefly <span
+                                class="bold">explain why</span> you think these will
+                            improve navigation.</p>
+                    </div>
+                    <aside class=" cols-4">
+                        <p class="small">Take advantage of the previous heuristic analysis templates you've used
+                            in
+                            class, these are great cheat-sheets for recalling many of the most common problems
+                            you'll
+                            see in UI design. Better yet, start building out your own list of 'usual suspects'
+                            for use
+                            in future exercises too
+                            <br /><br />
+                            If you're struggling to identify problems or solutions, reflect on the research you
+                            have
+                            already done and try to frame your approach via "I wish..." statements <i>"I wish
+                                it was
+                                easier to find local news..."</i>, <i>"I wish it didn't take so many clicks to
+                                get
+                                here..."</i>, etc, and imagine how you would make that wish come true - there's
+                            your
+                            proposal
+                        </p>
+                    </aside>
+                    <!-- FOOTER -->
+                    <footer class="rail cols-12 ln-top">
+                        <h5 class="label">GOOGLE DOC { ANNOTATED SCREENSHOTS + IDENTIFIED PROBLEMS +
+                            PROPOSED SOLUTIONS
+                            }
+                        </h5>
+                    </footer>
+                </div>
+                <!--  -->
+
+                <!-- DELIVERABLE -->
+                <div class="deliverable ln" data-maki="scroll-in">
+                    <!-- RAIL -->
+                    <div class="rail cols-12 ln-bottom">
+                        <h5 class="label">2. ⟶ Navigation Usability Testing</h5>
+                        <div class="btn-mark">
+                            <h6>+ MARK AS DONE</h6>
+                        </div>
+                    </div>
+                    <!-- BODY -->
+                    <div class="body cols-8">
+                        <p>‣ Pair up and conduct <span class="bold">2 to 4 usability tests</span> specifically for the
+                            navigation components you previously identified
+                        </p>
+                        <br />
+                        <p>‣ For these tests, at least one must test the <span class="bold">desktop version</span>
+                            and at least one must test the <span class="bold">mobile version</span>
+                        </p>
+                        <br />
+                        <p>‣ <span class="bold">Make notes of your findings</span>, with a focus on identifying <span
+                                class="bold">key pain
+                                points</span>
+                        </p>
+                        <br />
+                    </div>
+                    <aside class="cols-4">
+                        <p class="small">Remember - you are the expert. It's up to you to decide how and what you test.
+                            If you're feeling stuck, look at the problems you already identified. Could you get test
+                            subjects to verify that these are actually problems? If they are, maybe you can press them
+                            for their preferences? This is how you find insights early on.
+                            <br /><br />
+                            Everyone has their own style of testing, so don't think about what templates to use or what
+                            class activity to refer to, simply state an objective and test for it. ie, <i>"I believe
+                                it's hard to find specific things on the ATO website. Can I confirm this by seeing if a
+                                user demonstrates the same paint point? If I propose a different flow, will they tell me
+                                that's a great idea or suggest something else?"</i>
+                        </p>
+                    </aside>
+                    <!-- FOOTER -->
+                    <footer class="rail cols-12 ln-top">
+                        <h5 class="label">GOOGLE DOC { TESTING OVERVIEW + FINDINGS (PAIN POINTS, INSIGHTS etc.) }
+                        </h5>
+                    </footer>
+                </div>
+                <!--  -->
+
+                <!-- DELIVERABLE -->
+                <div class="deliverable ln" data-maki="scroll-in">
+                    <!-- RAIL -->
+                    <div class="rail cols-12 ln-bottom">
+                        <h5 class="label">3. ⟶ Create New Sitemap</h5>
+                        <div class="btn-mark">
+                            <h6>+ MARK AS DONE</h6>
+                        </div>
+                    </div>
+                    <!-- BODY -->
+                    <div class="body cols-8">
+                        <p>‣ Work independently to <span class="bold">create a new sitemap based on your card
+                                sorting</span>
+                        </p>
+                        <br />
+                        <p>‣ Ensure your sitemap encompasses all major navigation elements, including
+                            <span class="bold">top navs, side navs</span> and <span class="bold">footers</span>
+                        </p>
+                        <br />
+                    </div>
+                    <aside class="cols-4">
+                        <p class="small">Use any method you want to point out where certain elements in your sitemap
+                            will manifest. ie, add a legend with unique icons for 'top nav', 'side nav' and 'footer' and
+                            apply those icons to the relevant entries in your sitemap.
+                            <br /><br />
+                            Alternatively, draw large frames or 'swimlanes' around different tiers of your sitemap to
+                            point out where that level will appear in your UI.
+                        </p>
+                    </aside>
+                    <!-- FOOTER -->
+                    <footer class="rail cols-12 ln-top">
+                        <h5 class="label">IMAGE { SITEMAP }
+                        </h5>
+                    </footer>
+                </div>
+                <!--  -->
+
+                <!-- DELIVERABLE -->
+                <div class="deliverable ln" data-maki="scroll-in">
+                    <!-- RAIL -->
+                    <div class="rail cols-12 ln-bottom">
+                        <h5 class="label">4. ⟶ Prototype New Navigation Components</h5>
+                        <div class="btn-mark">
+                            <h6>+ MARK AS DONE</h6>
+                        </div>
+                    </div>
+                    <!-- BODY -->
+                    <div class="body cols-8">
+                        <p>‣ Based on your sitemap, work independently to <span class="bold">prototype a new primary
+                                navigation component</span> that incorporates your proposed solutions and new IA.
+                            <i>(Just
+                                the primary nav is enough for now, which usually manifests as a top nav)</i>
+                        </p>
+                        <br />
+                        <p>‣ Start with either a <span class="bold">desktop</span> <i>or</i> <span
+                                class="bold">mobile</span> prototype and demonstrate any additional states as necessary
+                            - <i>ie dropdowns, accordions</i>. Take this to a <span class="bold">low to mid
+                                fidelity</span> finish
+                        </p>
+                        <br />
+
+                        <p> <span class="bold">BONUS:</span> Produce a responsive primary nav component prototype. If
+                            you started with mobile, now make the desktop version. If you started with desktop - make it
+                            work for mobile. Also consider producing secondary and tertiary nav prototypes such as side
+                            panels and footers
+                        </p>
+                        <br />
+                    </div>
+                    <aside class="cols-4">
+                        <p class="small">You don't need any page templates ready to start making a clickable nav
+                            prototype. Simply link all your nav links to blank or placeholder screens.
+                            <br /><br />
+                            Low to mid fidelity means colour is allowed, and if time permits you can begin considering
+                            the cosmetic quality (how good it looks and feels) of your design.
+                        </p>
+                    </aside>
+                    <!-- FOOTER -->
+                    <footer class="rail cols-12 ln-top">
+                        <h5 class="label">IMAGES { NAV PROTOTYPE }; PROTOTYPE { RAW FILE or DIRECT LINK }
+                        </h5>
+                    </footer>
+                </div>
+                <!--  -->
+
             </div>
         </section>
 
