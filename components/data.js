@@ -1,96 +1,62 @@
 const objectives = [
-    "Analyzing the navigation of a website from a heuristic perspective.",
-    "Running usability tests on the navigation of a website.",
-    "Performing card sorting.",
-    "Redesigning a new sitemap based on card sorting results.",
-    "Prototyping a new navigation UI based on a sitemap."
+    "Creating and iterating on responsive components that look great on desktop <i>and</i> mobile",
+    "Wireframing a homepage and navigation system for both mobile and desktop",
+    "Implementing navigation into a clickable prototype",
+    "Running rapid-fire usability tests on your prototypes",
+    "Applying visual design to a homepage mockup using a UI style guide that you created"
 ]
 
 const deliverables = [
     {
-        label: "Heuristic Evaluation of Navigation",
+        label: "Design Navigation Components (top nav + footer)",
         body: [
-            `‣ Pair up and <span class="bold">analyze the navigation</span> of your website with usability
-            heuristics in mind`,
-            `‣ Take screenshots of your agency's navigation structures <i>(top nav, side nav, footer,
-                breadcrumbs, tabs, etc.)</i> and begin <span class="bold">redlining/annotating</span>
-            these
-            screenshots by <span class="bold">pointing out problems</span>, as well as highlighting
-            anything that you believe is
-            <span class="bold">already working</span> quite well.`,
-            `‣ Finally, <span class="bold">suggest solutions to these problems</span> and briefly <span
-            class="bold">explain why</span> you think these will
-        improve navigation.`
+            `‣ Work independently to <span class="bold">create</span> and/or <span class="bold">iterate your top nav and footer navigation components</span>`,
+            `‣ <span class="bold">Make them responsive</span> by creating both a <span class="bold">desktop</span> and <span class="bold">mobile</span> variant `,
+            `‣ <span class="bold">Demonstrate state</span> somewhere in your navigation components, where appropriate, such as with your top nav buttons, dropdowns, etc.`
         ],
         notes: [
-            `You don't need any page templates ready to start making a clickable nav prototype. Simply link all your nav links to blank or placeholder screens.`,
-            `Low to mid fidelity means colour is allowed, and if time permits you can begin consideringthe cosmetic quality (how good it looks and feels) of your design.`
+            `If you're wondering how your nav should look on mobile, be sure to use reference. Inspect and analyse your favorite websites and take note of common strategies like burger menus`,
+            `Managing multi-state components can be a lot of work. Be modest with the scope of your work this week and try not to overload yourselves. Isolate the most important element of your component and focus on that. The best place to start is with your top nav buttons as these are almost always present. What do they look like when the user hovers them? Clicks them? ...maybe they invoke a dropdown?`
         ],
-        format: "GOOGLE DOC { ANNOTATED SCREENSHOTS + IDENTIFIED PROBLEMS + PROPOSED SOLUTIONS }"
+        format: "IMAGES { TOP NAV COMPONENT + FOOTER COMPONENT + HOMEPAGE WIREFRAME }"
     },
     {
-        label: "Navigation Usability Testing",
+        label: "Homepage Responsive Wireframing & Prototyping",
         body: [
-            `‣ Pair up and conduct <span class="bold">2 to 4 usability tests</span> specifically for the
-            navigation components you previously identified`,
-            `‣ For these tests, at least one must test the <span class="bold">desktop version</span>
-            and at least one must test the <span class="bold">mobile version</span>`,
-            `‣ <span class="bold">Make notes of your findings</span>, with a focus on identifying <span
-            class="bold">key pain
-            points</span>`
+            `‣ Work independent to focus specifically to <span class="bold">wireframe a responsive new homepage for your government agency</span>`,
+            `‣ Implement your <span class="bold">responsive navigation components</span> into your new homepage design`,
+            `‣ <span class="bold">Demonstrate state</span> somewhere in your navigation components, where appropriate, such as with your top nav buttons, dropdowns, etc.`,
+            `‣ <span class="bold">Link everything back up</span> to form a <span class="bold">clickable prototype</span>`,
+            `<span class="bold">BONUS:</span> Consider creating components for other major players on your homepage - hero header, cards, action buttons, etc.`
         ],
         notes: [
-            `Remember - you are the expert. It's up to you to decide how and what you test.
-            If you're feeling stuck, look at the problems you already identified. Could you get test
-            subjects to verify that these are actually problems? If they are, maybe you can press them
-            for their preferences? This is how you find insights early on.`,
-            `Everyone has their own style of testing, so don't think about what templates to use or what
-            class activity to refer to, simply state an objective and test for it. ie, <i>"I believe
-                it's hard to find specific things on the ATO website. Can I confirm this by seeing if a
-                user demonstrates the same paint point? If I propose a different flow, will they tell me
-                that's a great idea or suggest something else?"</i>`
+            `The key to a good responsive page design is to change as few things as possible across desktop + mobile. If you want a better idea of how this looks in practice, go to your favorite website and resize the browser until you notice the mobile breakpoint kicking in. You'll notice most of the time, there's one basic change such as collapsing everything into a single column, and this does all the heavy lifting RE: making things responsive.`,
+            `Other than that, remember that a good responsive design is cohesive across breakpoints. Desktop and mobile should definitely not look like completely different websites.`,
+            `Remember, when linking pages up/prototyping, it's okay to send your nav links to placeholder artboards for now. You will grow out the completeness of your overall prototype over time.`
         ],
-        format: "GOOGLE DOC { TESTING OVERVIEW + FINDINGS (PAIN POINTS, INSIGHTS etc.) }"
+        format: "IMAGES { HOMEPAGE WIREFRAME (DESKTOP + MOBILE)}; PROTOTYPE { XD or FIGMA LINK }"
     },
     {
-        label: "Create New Sitemap",
+        label: "Rapid-fire Usability Testing",
         body: [
-            `‣ Work independently to <span class="bold">create a new sitemap based on your card
-            sorting</span>`,
-            `‣ Ensure your sitemap encompasses all major navigation elements, including
-            <span class="bold">top navs, side navs</span> and <span class="bold">footers</span>`
+            `‣ Work in pairs to <span class="bold">conduct 4-5 rapid-fire tests of your homepage</span>. These should be microscopic in scope and take as little as five seconds to test basic ergonomics and basic actions like navigating to a key page`,
+            `‣ <span class="bold">Iterate your homepage</span> by incorporating any test findings`
         ],
         notes: [
-            `Use any method you want to point out where certain elements in your sitemap
-            will manifest. ie, add a legend with unique icons for 'top nav', 'side nav' and 'footer' and
-            apply those icons to the relevant entries in your sitemap.`,
-            `Alternatively, draw large frames or 'swimlanes' around different tiers of your sitemap to
-            point out where that level will appear in your UI.`
+            `These tests should be extremely simple and focus on basic, fundamental usability. Can a user immediately sense that the information they want is available in the header? How long does it take them to find it?`
         ],
-        format: "IMAGE { SITEMAP }"
+        format: "DOCUMENT { TESTING NOTES + FINDINGS }"
     },
     {
-        label: "Prototype New Navigation Components",
+        label: "Create & Apply Visual Style",
         body: [
-            `‣ Based on your sitemap, work independently to <span class="bold">prototype a new primary
-            navigation component</span> that incorporates your proposed solutions and new IA.
-        <i>(Just
-            the primary nav is enough for now, which usually manifests as a top nav)</i>`,
-            `‣ Start with either a <span class="bold">desktop</span> <i>or</i> <span
-            class="bold">mobile</span> prototype and demonstrate any additional states as necessary
-        - <i>ie dropdowns, accordions</i>. Take this to a <span class="bold">low to mid
-            fidelity</span> finish`,
-            `<span class="bold">BONUS:</span> Produce a responsive primary nav component prototype. If
-            you started with mobile, now make the desktop version. If you started with desktop - make it
-            work for mobile. Also consider producing secondary and tertiary nav prototypes such as side
-            panels and footers`
+            `‣ <span class="bold>Create a UI style tile</span> based on your governmen agency's existing brand identity, but enhanced to better suit your proposed direction for the project`,
+            `‣ <span class="bold>Apply your proposed style to your prototype,</span> starting with your homepage. This will bring your prototype to a <span class="bold">mid to high fidelity</span> standard.`
         ],
         notes: [
-            `You don't need any page templates ready to start making a clickable nav
-            prototype. Simply link all your nav links to blank or placeholder screens.`,
-            `Low to mid fidelity means colour is allowed, and if time permits you can begin considering
-            the cosmetic quality (how good it looks and feels) of your design.`
+            `Once we start applying style, we are usually somewhere between mid and high fidelity. This means we should see as much of your style applied as possible, but there may still be some pages that are just loosely wireframed for now. The important part is your major pages ie homepage have been given a good level of cosmetic attention`,
+            `Your new style guide can be conservative in it's approach, or boldly proposing a whole new identity. Whichever way you go, the trick to being a good designing and making a good proposal is justifying everything. If you can build a case for a radical change, you can go ahead and make a radical change.`
         ],
-        format: "IMAGE { SITEMAP }"
+        format: "IMAGES { STYLE TILE + PROTOTYPE SCREENS };"
     }
 ]
