@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <g id="heroIllustration_caseStudy" transform="translate(-320 -877)">
+    <rect id="CONTAINER" width="512" height="512" transform="translate(320 877)" fill="#304ffe"/>
+    <g id="THUMB_B" transform="translate(368 1255.809)">
+      <g id="CONTAINER-2" data-name="CONTAINER" transform="translate(72 47.191)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-width="2">
+        <path d="M4,0H268a4,4,0,0,1,4,4V86a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V4A4,4,0,0,1,4,0Z" stroke="none"/>
+        <path d="M4,1H268a3,3,0,0,1,3,3V84a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V4A3,3,0,0,1,4,1Z" fill="none"/>
+      </g>
+      <rect id="Rectangle_150" data-name="Rectangle 150" width="268" height="5" transform="translate(74 128.191)" fill="#304ffe"/>
+      <g id="list" transform="translate(0 -16)">
+        <rect id="HEADER" width="60" height="16" rx="8" transform="translate(82 89.096)" fill="#fff"/>
+        <rect id="LINE" width="60" height="3" rx="1.5" transform="translate(82 121.096)" fill="#fff"/>
+        <rect id="LINE-2" data-name="LINE" width="60" height="3" rx="1.5" transform="translate(82 138.096)" fill="#fff"/>
+      </g>
+      <g id="list-2" data-name="list" transform="translate(64 -16)">
+        <rect id="HEADER-2" data-name="HEADER" width="60" height="16" rx="8" transform="translate(82 89.096)" fill="#fff"/>
+        <rect id="LINE-3" data-name="LINE" width="60" height="3" rx="1.5" transform="translate(82 121.096)" fill="#fff"/>
+        <rect id="LINE-4" data-name="LINE" width="60" height="3" rx="1.5" transform="translate(82 138.096)" fill="#fff"/>
+      </g>
+      <g id="list-3" data-name="list" transform="translate(128 -16)">
+        <rect id="HEADER-3" data-name="HEADER" width="60" height="16" rx="8" transform="translate(82 89.096)" fill="#fff"/>
+        <rect id="LINE-5" data-name="LINE" width="60" height="3" rx="1.5" transform="translate(82 121.096)" fill="#fff"/>
+        <rect id="LINE-6" data-name="LINE" width="60" height="3" rx="1.5" transform="translate(82 138.096)" fill="#fff"/>
+      </g>
+      <g id="list-4" data-name="list" transform="translate(192 -16)">
+        <rect id="HEADER-4" data-name="HEADER" width="60" height="16" rx="8" transform="translate(82 89.096)" fill="#fff"/>
+        <rect id="LINE-7" data-name="LINE" width="60" height="3" rx="1.5" transform="translate(82 121.096)" fill="#fff"/>
+        <rect id="LINE-8" data-name="LINE" width="60" height="3" rx="1.5" transform="translate(82 138.096)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="THUMB_B-2" data-name="THUMB_B" transform="translate(368 1062.809)">
+      <g id="CONTAINER-3" data-name="CONTAINER" transform="translate(72 47.191)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-width="2">
+        <rect width="272" height="153" rx="4" stroke="none"/>
+        <rect x="1" y="1" width="270" height="151" rx="3" fill="none"/>
+      </g>
+      <g id="PANEL" transform="translate(72 47.191)" fill="#fff" stroke="#fff" stroke-width="1">
+        <path d="M4,0H90.667a0,0,0,0,1,0,0V153a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" stroke="none"/>
+        <path d="M4,.5H89.667a.5.5,0,0,1,.5.5V152a.5.5,0,0,1-.5.5H4A3.5,3.5,0,0,1,.5,149V4A3.5,3.5,0,0,1,4,.5Z" fill="none"/>
+      </g>
+      <rect id="HEADER-5" data-name="HEADER" width="88" height="16" rx="8" transform="translate(176 63.691)" fill="#fff"/>
+      <rect id="LINE-9" data-name="LINE" width="152" height="3" rx="1.5" transform="translate(176 95.691)" fill="#fff"/>
+      <rect id="LINE-10" data-name="LINE" width="152" height="3" rx="1.5" transform="translate(176 112.691)" fill="#fff"/>
+      <rect id="LINE-11" data-name="LINE" width="152" height="3" rx="1.5" transform="translate(176 129.691)" fill="#fff"/>
+      <rect id="LINE-12" data-name="LINE" width="152" height="3" rx="1.5" transform="translate(176 146.691)" fill="#fff"/>
+      <rect id="LINE-13" data-name="LINE" width="152" height="3" rx="1.5" transform="translate(176 163.691)" fill="#fff"/>
+      <rect id="LINE-14" data-name="LINE" width="152" height="3" rx="1.5" transform="translate(176 180.691)" fill="#fff"/>
+    </g>
+    <g id="THUMB_A" transform="translate(368 869.809)">
+      <g id="CONTAINER-4" data-name="CONTAINER" transform="translate(72 47.191)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-width="2">
+        <rect width="272" height="153" rx="4" stroke="none"/>
+        <rect x="1" y="1" width="270" height="151" rx="3" fill="none"/>
+      </g>
+      <rect id="HEADER-6" data-name="HEADER" width="88" height="16" rx="8" transform="translate(162.667 89.096)" fill="#fff"/>
+      <rect id="LINE-15" data-name="LINE" width="88" height="3" rx="1.5" transform="translate(162.667 121.096)" fill="#fff"/>
+      <rect id="LINE-16" data-name="LINE" width="88" height="3" rx="1.5" transform="translate(162.667 138.096)" fill="#fff"/>
+      <rect id="LINE-17" data-name="LINE" width="88" height="3" rx="1.5" transform="translate(162.667 155.096)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
