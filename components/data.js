@@ -72,6 +72,6 @@ const deliverables = [
             `For most students, this will just be a matter of taking the slides from your previous group project presentations and filling in any gaps with written content. Think of it as replacing the verbal delivery of your in-class presentations with some long-form written text so that prospective employers can read through your work at their leisure.`,
             `Remember that case study page designs are very straightforward - start at the top, read to the bottom. Integrate some of your personal style along the way, don't overthink it, and you'll have a good time.`
         ],
-        format: "DOC/SLIDES { 2-3 CASE STUDIES }"
+        format: "IMAGES { CASE STUDY PAGE DESIGN }"
     },
 ]
