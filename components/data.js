@@ -1,90 +1,77 @@
 const objectives = [
-    "Designing and applying a style guide",
-    "Iterating responsive wireframes for desktop and mobile",
-    "Creating clickable prototypes of a homepage design for both desktop and mobile",
-    "Planning and executing a usability test for a mobile design",
-    "Building a case study that conveys the full scope of your design process"
+    "Planning ahead for your career with 60-120 day action plans",
+    "Collecting valuable inspiration and reference material for your moodboard",
+    "Taking stock of and iterating your personal resume",
+    "Readying your existing case studies for your portfolio",
+    "Creating a personal style guide",
+    "Going through the typical UI workflow to arrive at a responsive portfolio design",
 ]
 
 const deliverables = [
     {
-        label: "Finalise Style Guide",
+        label: "Complete Reflection Activities",
         body: [
-            `‣ Work independently to <span class="bold">push your style guide to a thorough finish</span> by capturing as many common elements as possible`,
-            `‣ Include <span class="bold">at least 25 common UI elements</span>, such as the following:
+            `‣ Finish the <span class="bold clr-accent"><a href="https://drive.google.com/file/d/1fdPgr-Ht1VJBSs63Nw0hi4IMedeZu7WX/view?usp=sharing">60/120 Day Action Plan</a></span> and <span class="bold clr-accent"><a href="https://drive.google.com/file/d/1ujW_DsWA9fjnj4ba9WQnTbtVmMXGufNJ/view?usp=sharing">About Me Portfolio Outline</a></span> writing activities started in class`,
+            `‣ For the <span class="bold">About Me Portfolio Outline</span> template, be sure to complete the <span class="bold">Cover section, About Me section, My Skills,</span> and <span class="bold">My Project</span> sections. Provision for at least 2-3 projects.`
+        ],
+        notes: [
+            `Don't stress yourself out ticking these ones off - the action plan is a reflective investment in yourself as we approach the final third of the course, so it should be approached calmly and meaningfully.`,
+            `Whilst we will need the portfolio outline content so you know what to put in your about me and similar sections, we will be working on these portfolio sites for multiple weeks so you will have many opportunities to iterate. The important thing is you get started now with a good foundation and be prepared to perfect it later.`
+        ],
+        format: "DOC { ACTION PLAN }; DOC { PORTFOLIO OUTLINE }"
+    },
+    {
+        label: "Update Your Resume",
+        body: [
+            `‣ <span class="bold">Update your resume</span> so that you can serve it prospective employers via your portfolio website`,
+            `‣ A typical resume contains the following sections:
             <span class="small">
-            <br/><br/>Checkboxes
-            <br/>Radio buttons
-            <br/>Dropdown lists
-            <br/>Buttons
-            <br/>Toggles
-            <br/>Text fields (including password input)
-            <br/>Text areas (long form text inputs)
-            <br/>Date/time pickers
-            <br/>Search fields
-            <br/>Breadcrumbs
-            <br/>Pagination
-            <br/>Lists
-            <br/>Sliders
-            <br/>Icons
-            <br/>Graphic elements (recurring motifs, patterns etc)
-            <br/>Tabs
-            <br/>Progress bars/meters
-            <br/>Tool tips
-            <br/>Notifications
-            <br/>Modal windows
-            <br/>Accordions
-            <br/>Cards/tiles</span>`
+            <br/> Contact Details (including link to your portfolio)
+            <br/> Summary
+            <br/> Technical Skills
+            <br/> Experience (Inclusive of student projects + unpaid/volunteer experience)
+            <br/> Education (You will list your UI/UX certificate here, employers love to see this)
+            </span>`
         ],
         notes: [
-            `If you're thinking "but my style guide is already vert thorough", that's great. Just fill in the gaps with a few of the recommended elements and call it done. Some students will have more ground to cover than others here and that's natural`,
-            `On top of the suggested elements, remember that one of the most important things for us to see in your style guides is your responsive rules and structures. Show us your column system, walk us through the logic of how you snap down to mobile, tell us about your breakpoints. Plain text is enough for a lot of this, but some visual diagrams go a long way - your style guide should be primarily a piece of visual communication.`
+            `Please contact your instructor directly if you're struggling with resume writing, and we will also take a moment to review what makes a good 'standard' resume in class`
         ],
-        format: "GOOGLE DRIVE FOLDER { IMAGES (style tile, component sheets, colours/typography guide etc) }"
+        format: "DOC { RESUME }"
     },
     {
-        label: "Iterate Prototype (High fidelity)",
+        label: "Portfolio Designing",
         body: [
-            `‣ Work independent to iterate on your prototype and <span class="bold">push it to a high fidelity finish</span>`,
-            `‣ Start by ensuring your <span class="bold">style guide has been rolled out and implemented everywhere appropriate</span>, paying attention to consistent use of all your style guidelines`,
-            `‣ Perform a <span class="bold">high fidelity iteration pass</span>, solving any outstanding issues or necessary changes, and <span class="bold">insert as much 'real' content (images, text)</span> as appropriate`,
-            `‣ <span class="bold">Ensure everything is linked up correctly for both mobile and desktop prototype flows</span>, checking for any dead ends or missing links`
-        ],
-        notes: [
-            `Again, if you feel like you're already on top of most of this - that's excellent. Use this as a hard-earned opportunity to really put a final layer of polish on things. You want things to look the way you want them in your case study, so now is your chance to really get pixel perfect. Remember, other than your peers, the next people to look at these are likely going to be your prospective new employers so you'll want to be as thorough as you can`
-        ],
-        format: "IMAGES { ALL SCREENS (DESKTOP + MOBILE)}; PROTOTYPE { XD or FIGMA LINK }"
-    },
-    {
-        label: "Test & Iterate (High fidelity)",
-        body: [
-            `‣ Work with a partner to <span class="bold">test your mobile homepage with 7 to 10 users</span>`,
-            `‣ Test anything you still have any hesitations about, but be sure to <span class="bold">focus on navigation usability in particular</span>`,
-            `‣ <span class="bold">Capture and document all testing feedback</span> and <span class="bold">independently iterate on your high fidelity prototype as necessary</span> to roll in any important solutions discovered during testing`
-        ],
-        notes: [
-            `The benefit of testing a high fidelity prototype is your users will find it much more natural than a lower fidelity demo, or a wireframe for instance. Use this to your advantage.`,
-            `Do, however, keep the scope of your testing and iteration smaller. As designers we try to work from 'big to small' as often as possible, and we should have already tackled our biggest problems in the previous weeks - now is your time to focus on small details and 1%ers. This means you can keep the scope of your testing small and precise. Consider A/B testing small changes.`
-        ],
-        format: "DOCUMENT { USABILITY TESTING PLAN + TESTING RESULTS + EVIDENCE OF ITERATIONS }"
-    },
-    {
-        label: "Complete Case Study",
-        body: [
-            `‣ Work independently to <span class="bold">produce a case study that captures the entire scope of your Government Agency Website Redesign</span>`,
-            `‣ At a minimum, your case study should include evidence of the following:
+            `‣ Start going through the usual motions for <span class="bold">designing your portfolio homepage</span>, pushing it through to any meaningful level of fidelity that you feel comfortable working from in the coming weeks`,
+            `‣ Remember to consider <span class="bold">responsive design</span> from the beginning of your design process`,
+            `‣ Start planning out your own <span class="bold">personal style guide</span> as you work on this - a style tile is enough to start`,
+            `‣ Plan for at least the following sections:
             <span class="small">
-            <br/><br/>Initial UI analysis
-            <br/>Preliminary UX research
-            <br/>UI style guide and branding 
-            <br/>Responsive wireframes
-            <br/>Information Architecture and sitemap
-            <br/>High fidelity screen mockups 
-            <br/>Test results and resultant iterations</span>`
+            <br/> An engaging hero/header
+            <br/> About me
+            <br/> My skills
+            <br/> My projects (2-3 case studies)
+            <br/> Link to your resume
+            <br/> Contact details
+            </span>`
+
         ],
         notes: [
-            `We've already demonstrated we are capable of making delightful case studies, now just go through the motions and do it again. Remember that the attached list of evidence required is just a minimum starter point - you are the expert and you get to tell the story. Tell it in any order you want that works, and remember that presentation of your case study itself goes a very long way in the case study, so pour plenty of love into your slide layouts too.`
+            `Use the content you wrote in your About Me Portfolio Outline activity to populate and plan out the required sections.`,
+            `Some students will find they will need to push this to a relatively high fidelity finish to really get a feel for what they want, others will find that a mid-fidelity finish or even a well-thought-out sketch is enough to work from for now - especially knowing that things are likely to evolve in the coming weeks. Approach the level of finish you aim for responsibly and deliberately.`,
         ],
-        format: "GOOGLE SLIDES { COMPLETE CASE STUDY }"
+        format: "IMAGES { STYLE GUIDE }; IMAGES { ALL SCREENS (as necessary) };"
+    },
+    {
+        label: "Case Study Development",
+        body: [
+            `‣ Organise and begin finalising at least<span class="bold">2-3 case studies</span> for your portfolio website`,
+            `‣ You should develop these to a point where every case study on your site clearly displays each beat of the design thinking process - Research, Definition, Ideation, Prototyping, Testing, Conclusion`,
+            `‣ <span class="bold">Sketch/wireframe</span> your case study layout, pushing to any level of fidelity you feel comfortable working from in the coming weeks`,
+        ],
+        notes: [
+            `For most students, this will just be a matter of taking the slides from your previous group project presentations and filling in any gaps with written content. Think of it as replacing the verbal delivery of your in-class presentations with some long-form written text so that prospective employers can read through your work at their leisure.`,
+            `Remember that case study page designs are very straightforward - start at the top, read to the bottom. Integrate some of your personal style along the way, don't overthink it, and you'll have a good time.`
+        ],
+        format: "DOC/SLIDES { 2-3 CASE STUDIES }"
     },
 ]
