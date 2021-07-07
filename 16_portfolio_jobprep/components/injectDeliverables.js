@@ -17,6 +17,7 @@ const injectDeliverables = () => {
             <div class="rail-top ">
                 <h5 class="label">⟶ ${index}. ${deliverable.label}</h5>
                 <div class="btn-mark">
+                    <h6>+ MARK AS DONE</h6>
                 </div>
             </div>
 
