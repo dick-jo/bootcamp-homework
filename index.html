@@ -11,12 +11,30 @@
     <link href="./tools/maki-js/maki.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 
+    <!-- Hotjar Tracking Code for https://dick-jo.github.io/bootcamp-homework/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2651390,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
     <style>
         /* FONTS */
+        
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        :root {
+         :root {
             --font-display: 'IBM Plex Mono', monospace;
             --font-body: 'Work sans', monospace;
             --border: 1px solid var(--text);
@@ -25,9 +43,9 @@
             /* MAKI */
             --maki-duration: 560ms;
         }
-
         /* COLS */
-        :root {
+        
+         :root {
             /* DEFAULT GRID */
             --grid-1: 12;
             --grid-2: 8;
@@ -36,29 +54,29 @@
             --grid-5: 3;
             --grid-6: 2;
         }
-
+        
         .cols-8 {
             grid-column: span var(--grid-2);
         }
-
+        
         .cols-6 {
             grid-column: span var(--grid-3);
         }
-
+        
         .cols-4 {
             grid-column: span var(--grid-4);
         }
-
+        
         .cols-3 {
             grid-column: span var(--grid-5);
         }
-
+        
         .cols-1 {
             grid-column: span var(--grid-6);
         }
-
+        
         @media screen and (max-width: 864px) {
-            :root {
+             :root {
                 /* SMALL GRID */
                 --grid-1: 12;
                 --grid-2: 12;
@@ -67,75 +85,72 @@
                 --grid-5: 12;
                 --grid-6: 6;
             }
-
             header {
                 flex-direction: column;
             }
-
             header .title {
                 flex-basis: 25%
             }
-
             header .container {
                 flex-basis: 75%;
             }
         }
-
         /* COMMON */
+        
         h1 {
             font-size: var(--fs-4);
             line-height: var(--fs-4);
         }
-
+        
         h2 {
             font-size: var(--fs-3);
             line-height: var(--fs-3);
         }
-
+        
         h4 {
             font-size: calc(var(--fs-2) * 0.96);
             line-height: var(--fs-3);
             font-weight: 500;
         }
-
+        
         h5 {
             font-size: calc(var(--fs-2) * 0.72);
             font-weight: 640;
         }
-
+        
         h6 {
             font-weight: 600;
         }
-
+        
         .bold {
             font-weight: 900;
         }
-
+        
         .light {
             font-weight: 400;
         }
-
+        
         .large {
             font-size: var(--fs-2);
         }
-
+        
         .small {
             font-size: var(--fs-1);
             line-height: calc(var(--fs-2) * 1.12);
         }
-
+        
         .material-icons-outlined {
             transform: translateY(calc(var(--sc-1) * 0.64));
         }
-
+        
         .rail-a {
             min-height: var(--rail-a);
         }
-
+        
         .stub {
             margin: var(--sc-3) 0;
         }
-
+        
         .pill {
             padding: 0 var(--sc-3);
             padding-bottom: 3px;
@@ -143,7 +158,7 @@
             background-color: var(--accent);
             color: white;
         }
-
+        
         .pill-b {
             padding: 0 var(--sc-3);
             padding-bottom: 3px;
@@ -151,12 +166,12 @@
             background-color: var(--primary);
             color: white;
         }
-
+        
         .underline {
             text-decoration: underline;
         }
-
         /* NAV */
+        
         nav {
             height: 72px;
             width: 100%;
@@ -168,18 +183,18 @@
             z-index: 72;
             border-bottom: 1px solid #bdbdbd;
         }
-
+        
         .nav-wrapper {
             width: 100%;
             justify-content: space-between;
             align-items: center;
         }
-
+        
         [data-theme="dark"] nav {
             background-color: rgba(255, 255, 255, 0.02);
         }
-
         /* BTN-DARK */
+        
         #btnDark {
             border: var(--border);
             border-color: var(--text);
@@ -188,41 +203,40 @@
             padding: calc(var(--sp-1) * 0.8) var(--sc-4);
             transition: var(--tm-1);
         }
-
+        
         #btnDark:hover {
             background-color: var(--text);
             color: var(--dark-text);
             border: 1px solid rgba(0, 0, 0, 0);
         }
-
+        
         [data-theme="dark"] #btnDark:hover {
             background-color: var(--text);
             color: var(--dark-background)
         }
-
+        
         .span-dark {
             opacity: 24%;
         }
-
+        
         [data-theme="dark"] .span-dark {
             opacity: 100%
         }
-
+        
         [data-theme="dark"] .span-light {
             opacity: 24%;
         }
-
+        
         @media screen and (max-width: 864px) {
             nav h5 {
                 display: none;
             }
-
             .nav-wrapper {
                 justify-content: flex-end;
             }
         }
-
         /* MAIN */
+        
         main,
         .nav-wrapper {
             margin-left: auto;
@@ -230,16 +244,16 @@
             max-width: 1680px;
             padding: 0 var(--sc-4);
         }
-
+        
         main {
             padding-bottom: 420px;
         }
-
+        
         main>* {
             margin: var(--sc-4) 0;
         }
-
         /* HEADER */
+        
         header {
             display: flex;
             min-height: 720px;
@@ -247,24 +261,23 @@
             max-height: 980px;
             margin-top: var(--sc-7);
         }
-
+        
         header>* {
             padding: var(--sc-6);
             flex-basis: 50%;
         }
-
         /* HERO FIGURE */
-
+        
         #heroFigureContainer {
             display: flex;
         }
-
+        
         header figure {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
-
+        
         header figure .body {
             background: url(./heroIllustration_caseStudy_2.svg);
             background-color: var(--accent);
@@ -273,7 +286,7 @@
             background-repeat: no-repeat;
             flex-grow: 1;
         }
-
+        
         header figure .label {
             padding: var(--sc-2);
             display: flex;
@@ -281,67 +294,63 @@
             align-items: center;
             min-height: var(--rail-a);
         }
-
         /* BREAKUP: FOLD */
+        
         #breakupFold {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+        
         #bouncingChevron {
             font-size: var(--fs-4);
             color: var(--accent);
             animation: bounce 2s infinite;
         }
-
+        
         @keyframes bounce {
             0% {
                 transform: translateY(var(--sc-2))
             }
-
             50% {
                 transform: translateY(calc(var(--sc-2) * -1))
             }
-
             100% {
                 transform: translateY(var(--sc-2))
             }
         }
-
         /* SECTION: OBJECTIVES */
-
+        
         #sectionObjectives .body>* {
             margin-bottom: var(--sc-6);
         }
-
+        
         .objective {
             grid-column: span var(--grid-4);
             padding-top: var(--sp-1);
             margin-right: var(--sp-2);
             border-top: var(--border);
         }
-
         /* SECTION: DELIVERABLES */
-
+        
         #sectionDeliverables .body>* {
             margin-bottom: var(--sc-4);
         }
-
+        
         #sectionDeliverables .bold {
             font-weight: 640;
         }
-
+        
         .deliverable {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             border: var(--border);
         }
-
+        
         .deliverable .label {
             flex-grow: 1;
         }
-
+        
         .deliverable .btn-mark {
             display: flex;
             align-items: center;
@@ -349,20 +358,20 @@
             height: 100%;
             color: #bdbdbd;
         }
-
+        
         .deliverable>* {
             padding: var(--sc-4) var(--sc-4);
         }
-
+        
         .deliverable .body {
             grid-column: span var(--grid-2);
             font-weight: 500;
         }
-
+        
         .deliverable aside {
             grid-column: span var(--grid-4);
         }
-
+        
         .deliverable .rail-top,
         .deliverable .rail-bottom {
             grid-column: span var(--grid-1);
@@ -371,15 +380,14 @@
             min-height: var(--rail-a);
             padding: 0 0 0 var(--sc-4);
         }
-
+        
         .deliverable .rail-top {
             border-bottom: var(--border);
         }
-
+        
         .deliverable .rail-bottom {
             border-top: var(--border);
         }
-
         /*  */
     </style>
 
@@ -402,14 +410,11 @@
     <main>
 
         <!-- HERO HEADER -->
-        <header id="hero" class="tile cr-1" data-maki="scroll-in" data-tilt data-tilt-max="1.2" data-tilt-speed="300"
-            data-tilt-glare="true" data-tilt-max-glare="0.42">
+        <header id="hero" class="tile cr-1" data-maki="scroll-in" data-tilt data-tilt-max="1.2" data-tilt-speed="300" data-tilt-glare="true" data-tilt-max-glare="0.42">
             <div id="heroTitle" class="title">
                 <h1>Case Study Development</h1>
                 <div class="stub fill-accent"></div>
-                <p class="large">Throughout the UX/UI Boot Camp, you have created several case studies documenting your
-                    process, problem-solving skills, and ability to tell a story. For this homework, now you'll develop
-                    those pages for your website.
+                <p class="large">Throughout the UX/UI Boot Camp, you have created several case studies documenting your process, problem-solving skills, and ability to tell a story. For this homework, now you'll develop those pages for your website.
                 </p>
             </div>
             <div id="heroFigureContainer" class="container">
@@ -438,17 +443,11 @@
             <h2>Objectives</h2>
             <div class="stub fill-accent"></div>
             <div id="sectionObjectivesBody" class="body grid-12">
-                <p class="cols-12 body-1">As a UX professional, telling an effective story for your case study is
-                    important and can be the difference between getting hired for a new gig or being passed over for a
-                    different candidate. You already have experience telling a story using your research; you are now
-                    going to showcase your process on a different medium—the world wide web.
+                <p class="cols-12 body-1">As a UX professional, telling an effective story for your case study is important and can be the difference between getting hired for a new gig or being passed over for a different candidate. You already have experience telling a story
+                    using your research; you are now going to showcase your process on a different medium—the world wide web.
 
-                    <br /><br />
-                    For this homework, you’ll convert the case study you designed during Unit 16.1 into a live, coded
-                    webpage, and in doing so you'll be able to take advantage of any techiques you've learned so far,
-                    including frameworks such as Bootstrap. This will showcase your design thinking abilities as you
-                    build the story of this webpage, as well as give you an opportunity to show off your technical
-                    skills.
+                    <br /><br /> For this homework, you’ll convert the case study you designed during Unit 16.1 into a live, coded webpage, and in doing so you'll be able to take advantage of any techiques you've learned so far, including frameworks such
+                    as Bootstrap. This will showcase your design thinking abilities as you build the story of this webpage, as well as give you an opportunity to show off your technical skills.
 
 
                 </p>
